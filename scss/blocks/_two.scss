@@ -1,0 +1,80 @@
+.two-section {
+    position: relative;
+    background: rgb(244, 245, 247);
+    padding: 80px 0 94px;
+    z-index: 1;
+}
+.content {
+    max-width: 635px;
+    margin-bottom: 72px;
+}
+.content__title {
+    // @mixin title($fs: 40px, $lh: 64px, $ls: -0.1px) {}
+        color: rgb(45, 49, 77);
+        font-family: Public Sans;
+        font-size: 40px;
+        font-weight: 100;
+        line-height: 64px;
+        letter-spacing: -0.71px;
+        margin-bottom: 16px;
+}
+.content__text {
+    // @mixin text($fs:18px, $lh:28px, $ls:-0.28px){}
+    color: rgb(149, 151, 165);
+    font-family: PublicSans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.28px;
+}
+.twolist {
+    display: flex;
+    gap: 106px;
+}
+.twolist__item {
+    max-width: 255px;
+    flex-direction: column;
+    display: flex;
+}
+.twolist__item-img {
+    margin-bottom: 40px;
+}
+.twolist__item-title {
+    // @mixin title($fs:56px, $lh:64px, $ls:-0.43px){}
+    color: rgb(45, 49, 77);
+    font-family: Public Sans;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 28px;
+    letter-spacing: -0.43px;
+    margin-bottom: 26px;
+}
+.twolist__item-text {
+    // @mixin text($fs:16px, $lh:26px, $ls:-0.25px){}
+    color: rgb(149, 151, 165);
+    font-family: PublicSans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+}
+@media (max-width:763px) {
+    .ul-list {
+        margin: 0 auto;
+    }
+    .content {
+        text-align: center;
+        margin-bottom: 56px;
+
+    }
+    .twolist {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .twolist__item-img {
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+}
